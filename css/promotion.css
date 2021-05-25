@@ -1,0 +1,346 @@
+@import "./default.css";
+
+.section-promotion{
+  display: flex;
+  gap: 15px;
+  padding: 18px;
+  border: 2px solid #0a3f71;
+  background: linear-gradient( 0deg, #1B1250 0%, #0C4992 100% );
+  margin: 10px 0 30px 0;
+}
+.promotion-left{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 10px;
+}
+
+/* Não mexer */
+.boxcolor{
+  background: linear-gradient( 0deg, #1B1250 0%, #2C4992 100% );
+}
+/* */
+
+.promotion-left > div{
+  padding: 10px 10px 20px 10px;
+  height: 100%;
+}
+
+.promotion-left > div:nth-child(1){
+  display: flex;
+  flex-direction: column;
+}
+
+.promotion-left > div:nth-child(1) > h2{
+  color: #12dde6;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.promotion-left > div:nth-child(1) > div ul{
+  overflow: auto;
+  height: 300px;
+  padding: 13px;
+  background: #1f194d;
+}
+
+.promotion-left > div:nth-child(1) > div ul li{
+  display: flex;
+  gap: 5px;
+  margin: 10px 0;
+  height: 35px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.promotion-left > div:nth-child(1) > div ul li > img{
+  height: 35px;
+}
+
+.promotion-left > div:nth-child(1) > div > ul li > p{
+  color: white;
+  font-size: 9px;
+}
+
+.promotion-left > div:nth-child(2) > p{
+  color: #12dde6;
+  padding: 10px;
+}
+
+.promotion-left > div:nth-child(2) > div{
+  display: flex;
+  gap: 10px;
+}
+
+.promotion-left > div:nth-child(2) > div input{
+  background: #282363;
+  color: #1EFD39;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
+  border-radius: 3px;
+  padding: 10px;
+  width: 100%;
+  height: 40px;
+}
+
+.promotion-left > div:nth-child(2) > div img{
+  width: 34px;
+  cursor: pointer;
+}
+
+.promotion-right{
+  flex: 3;
+}
+
+.promotion-right-top{
+  padding: 20px 40px;
+}
+
+.promotion-right-top > div:nth-child(1),.promotion-right-top > div:nth-child(2){
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.promotion-right-top > div:nth-child(1) img{
+  width: 30px;
+}
+
+.promotion-right-top > div:nth-child(1) h2{
+  color: #12dde6;
+  text-transform: uppercase;
+}
+
+.promotion-right-top > div:nth-child(2){
+  margin-top: 20px;
+}
+
+.promotion-right-top > div:nth-child(2) > div{
+  width: 100%;
+  padding: 10px 15px;
+}
+
+.promotion-right-top > div:nth-child(2) > div h3{
+  color: #12dde6;
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.promotion-right-top > div:nth-child(2) > div > div{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.promotion-right-top > div:nth-child(2) > div > div img{
+  width: 35px;
+  cursor: pointer;
+}
+
+.promotion-right-bottom{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.promotion-right-bottom > div > div{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.promotion-right-bottom > div > div img{
+  width: 45px;
+}
+.promotion-right-bottom > div > div h3{
+  color: #12dde6;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.promotion-right-bottom > div > div:nth-child(2){
+  margin: 10px 0;
+}
+.promotion-right-bottom > div > div:nth-child(2) ul{
+  display: flex;
+}
+.promotion-right-bottom > div > div:nth-child(2){
+  overflow: hidden;
+  width: 815px;
+}
+
+.promotion-right-bottom > div > div:nth-child(2) ul{
+  transition: .3s;
+}
+
+.promotion-right-bottom > div > div:nth-child(2) ul li{
+  margin: 0 10px;
+}
+.promotion-right-bottom > div > div:nth-child(2) ul li iframe, 
+.promotion-right-bottom > div > div:nth-child(2) ul li img,
+.promotion-right-bottom > div > div:nth-child(2) ul li video{
+  width: 100%;
+  height: 100%;
+}
+
+.promotion-right-bottom > div > div:nth-child(2) ul li{
+  width: 260px;
+  height: 146px;
+}
+
+.promotion-right-bottom > div > div:nth-child(3){
+  display: flex;
+  justify-content: space-between;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+   user-select: none;
+}
+
+.promotion-right-bottom > div > div:nth-child(3) span:nth-child(1){
+  font-size: 30px;
+  cursor: pointer;
+  color: #12dde6;
+}
+.promotion-right-bottom > div > div:nth-child(3) span:nth-child(2){
+  font-size: 30px;
+  cursor: pointer;
+  color: #12dde6;
+}
+
+.modalNotice{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.modalNotice.show{
+  display: flex;
+}
+
+.btn-close{
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 10px;
+}
+
+.btn-close > div{
+  height: 30px;
+  width: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.btn-close > div::after, .btn-close > div::before{
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 30px;
+  background: rgb(29,29,29);
+}
+
+.btn-close > div::after{
+  transform: rotate(45deg);
+  bottom: 15px;
+}
+
+.btn-close > div::before{
+  transform: rotate(135deg);
+  bottom: 15px;
+}
+
+.modalNotice > div{
+  background: white;
+  width: 550px;
+  padding: 20px;
+  height: 95%;
+  overflow: auto;
+}
+
+
+.modalNotice > div::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 3px;
+  height: 10px;
+}
+
+.modalNotice > div::-webkit-scrollbar-thumb {
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+
+.notice-title{
+  text-align: start;
+}
+
+.notice-subtitle{
+  font-size: 13px;
+  margin: 10px 0;
+}
+
+.notice-img img{
+  width: 100%;
+  margin: 10px 0;
+}
+
+.notice-content{
+  letter-spacing: .5px;
+  font-size: 12px;
+}
+
+@media (max-width: 1220px){
+  .section-promotion{
+    flex-direction: column;
+  }
+
+  .promotion-right-bottom > div > div:nth-child(2) {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px){
+  .promotion-right-top > div:nth-child(1) h2 {
+    font-size: 17px;
+  }
+  .promotion-right-top > div:nth-child(2) {
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width: 460px){
+  .promotion-right-top {
+    padding: 5px 10px;
+  }
+  .promotion-right-top > div:nth-child(1) h2 {
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  .promotion-right-top > div:nth-child(1) {
+    flex-direction: column;
+  }
+  .promotion-right-top > div:nth-child(2) > div h3 {
+    font-size: 16px;
+  }
+  .promotion-right-bottom {
+    padding: 10px;
+    margin: 10px 0;
+  }
+  .promotion-right-bottom > div > div h3 {
+    font-size: 14px;
+  }
+  .modalNotice > div {
+    width: 320px;
+  }
+}

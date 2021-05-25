@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Roboto:wght@100;300;400&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      text-rendering: optimizeLegibility !important;
+      -webkit-font-smoothing: antialiased !important;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+
+    #app {
+      min-height: 100%;
+    }
+
+    .email-body {
+      background:
+        url(https://onne.s3-sa-east-1.amazonaws.com/team-MCEYRP6.jpg) no-repeat center center;
+      background-size: cover;
+      color: #6952BF;
+    }
+
+    .app-template .text-uppercase {
+      text-transform: uppercase !important;
+    }
+
+    .app-template .text-white {
+      color: #fff !important;
+    }
+
+    .app-template .title {
+      font-size: 30px;
+      text-align: center;
+      font-family: 'Nothing You Could Do', cursive;
+    }
+
+
+    .app-template p {
+      line-height: 30px;
+      font-size: 24px;
+      text-align: center;
+      font-family: 'Roboto', monospace;
+    }
+
+
+    .app-template .container-email {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .template-new-member {
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      flex-wrap: wrap;
+    }
+
+    .template-new-member .logo {
+      width: 300px;
+      height: 300px;
+    }
+
+    .template-new-member .logo img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+    }
+
+    .content-email {
+      background: rgba(255, 255, 255, 0.7);
+      padding: 20px;
+      position: relative;
+      width: 100%;
+      flex: 1;
+    }
+
+
+    @media (min-width: 576px) {
+
+      .container-email,
+      .container-email-sm {
+        max-width: 540px;
+      }
+    }
+
+    @media (min-width: 768px) {
+
+      .container-email,
+      .container-email-md,
+      .container-email-sm {
+        max-width: 720px;
+      }
+    }
+
+    @media (min-width: 992px) {
+
+      .container-email,
+      .container-email-lg,
+      .container-email-md,
+      .container-email-sm {
+        max-width: 960px;
+      }
+
+      .app-template .title {
+        font-size: 60px;
+        text-align: left;
+      }
+
+      .app-template p {
+        line-height: 60px;
+        font-size: 46px;
+        text-align: left;
+      }
+
+    }
+
+    @media (min-width: 1200px) {
+
+      .container-email,
+      .container-email-lg,
+      .container-email-md,
+      .container-email-sm,
+      .container-email-xl {
+        max-width: 1400px;
+      }
+
+      .content-email {
+        width: 90%;
+        padding-left: 15px;
+      }
+
+      .content-email .title {
+        margin-top: -60px;
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body class="email-body">
+  <div id="app" class="app-template template-new-member">
+    <div class="container-email">
+      <div class="logo">
+        <img src="https://onne.s3-sa-east-1.amazonaws.com/Logo+ONNE+Aura+coloriada.png" alt="">
+      </div>
+    </div>
+    <div class="content-email">
+      <h1 class="title">Reeferral confirmation!</h1>
+      <p>Hello!</p>
+      <p>
+        Conglatulations you just referred!<br />
+        You can contact them by their social media <br />
+        links that appear in your unilevel page! <br />
+        Keep up the good work
+      </p>
+      <p>&nbsp;</p>
+      <p class="text-uppercase">
+        onne vip
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>

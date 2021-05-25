@@ -1,0 +1,141 @@
+@import './default.css';
+
+p{
+    color: #08a9b0;
+}
+
+input{
+    height: 22px;
+    width: 170px;
+    color: white;
+    background-color: rgba(23, 4, 189, 1);
+}
+
+input[type=number]::-webkit-inner-spin-button {
+-webkit-appearance: none;
+}
+
+
+.div-select{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-border {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 30px;
+width: 180px;
+background-image: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+);
+}
+
+.payment{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.payment-container{
+    width: 90%;
+    padding: 10px 0;
+}
+
+.payment-content{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 35px;
+}
+
+
+.result span{
+    margin: 5px;
+    font-size: 20px;
+    color: white;
+}
+
+.important{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.important-container{
+    width: 90%;
+}
+
+.resume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 17px;
+}
+
+.resume-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.resume-container > div p:nth-child(odd){
+    margin-top: 15px;
+}
+
+.wallet{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.wallet > button{
+    margin: 10px 0;
+}
+
+.transaction-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 175px;
+}
+
+@media (max-width: 800px){
+    .resume-container{
+        flex-direction: column;
+    }
+    .resume-container > div{
+        margin: 15px 0;
+        width: 100%;
+    }
+
+    
+}
+
+@media (max-width: 460px){
+    .payment-content > div{
+        margin: 10px 0;
+    }
+    .div-select{
+        align-items: flex-start;
+    }
+}
